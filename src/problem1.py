@@ -244,7 +244,7 @@ def problem1b(m, f):
             num_prime = num_prime + 1
     return num_prime
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     ####################################################################
@@ -340,6 +340,13 @@ def problem1c(n):
            and the product of those numbers is 223092870,
            and the sum of the digits in 223092870 is 33.
     """
+    prod = 1
+    for k in range((n - 1)):
+        if is_prime(2 + k):
+            prod = prod * (2 + k)
+            sum = sum_of_digits(prod)
+    return sum
+
     # ------------------------------------------------------------------
     # TODO: 6. Implement and test this function.
     #          Tests have been written for you (above).
