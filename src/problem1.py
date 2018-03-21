@@ -348,7 +348,7 @@ def problem1c(n):
     return sum
 
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
